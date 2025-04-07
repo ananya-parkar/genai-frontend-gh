@@ -1,0 +1,65 @@
+.app-container{
+  /* margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #bef5f2; */
+    /* overflow: hidden;  */
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: center;
+    padding-bottom:20px;
+    padding-top: 50px;
+}
+
+.button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;              /* Position it fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;               /* Use flexbox to center the modal */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;          /* Center vertically */
+  z-index: 1000;               /* Ensure it appears above other content */
+}
+
+.modal-content {
+  background-color: white;      /* White background for the modal */
+  padding: 20px;                /* Padding inside the modal */
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 400px;                 /* Fixed width for the modal */
+}
+
+.close-button {
+  color: #aaa;                  /* Color for the close button */
+  float: right;                 /* Float to the right corner */
+  font-size: 28px;              /* Size of the close button */
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;                 /* Change color on hover/focus */
+  cursor: pointer;              /* Pointer cursor on hover */
+}
+
